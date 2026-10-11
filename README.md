@@ -19,3 +19,5 @@ See [Credits and source references](CREDITS.md) for the upstream tools, librarie
 A separate [fictional review-interface example](examples/review_ui/README.md) supports recipient selection, note editing and generated drafts. It cannot send email or access the private campaign.
 
 [Download the full-motion recording](docs/demo.mp4).
+
+[Try the demo and a practical exercise](docs/QUICKSTART.md).

@@ -1,0 +1,20 @@
+{
+  "tag": "v0.1.0-demo",
+  "title": "Cold Email Batching \u2014 public workflow demo",
+  "publish_at_utc": "2026-10-16T13:47:00+00:00",
+  "deadline_utc": "2026-10-16T18:59:59+00:00",
+  "assets": [
+    {
+      "path": "docs/demo.gif",
+      "name": "demo.gif",
+      "content_type": "image/gif",
+      "sha256": "3f668b25cf966b14cda85b2aa80d7ef37b3610993703dfa3c052c34912c785e0"
+    },
+    {
+      "path": "docs/demo.mp4",
+      "name": "demo.mp4",
+      "content_type": "video/mp4",
+      "sha256": "c812de252fc92670768acd958863ca11f86d48cbba73382eed27d4c815224f33"
+    }
+  ]
+}
