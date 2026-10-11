@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="review-token" content="{{ csrf }}">
+  <title>Sample · Email workspace</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand"><span class="brand-icon">Q</span><div>Demo Sender<small>EMAIL WORKSPACE</small></div></div>
+    <div class="nav-label">YOUR CAMPAIGN</div>
+    <nav aria-label="Campaign sections">
+      <button data-nav="recipients">01 <span>Recipients</span></button>
+      <button data-nav="emails">02 <span>Email drafts</span></button>
+      <button data-nav="resume">03 <span>Resume</span></button>
+      <button data-nav="review">04 <span>Review &amp; send</span></button>
+      <button data-nav="history">↗ <span>Sending history</span></button>
+      <button data-nav="account">⚙ <span>Sender &amp; settings</span></button>
+    </nav>
+    <div class="sidebar-bottom"><span class="dot"></span> Sample review workspace<small>Fictional contacts · SMTP disabled</small></div>
+  </aside>
+  <div class="workspace">
+    <header><div><span class="eyebrow">CAREER OUTREACH</span><h1>Technical support opportunities</h1></div><div class="sender-badge"><span class="avatar">QA</span><div>Demo Sender<small>demo@sender.example</small></div></div></header>
+    <div id="notice" role="status" aria-live="polite" hidden></div>
+    <div id="loading" class="card">Loading your campaign…</div>
+    <div id="overview" class="overview" hidden></div>
+    <main id="content" tabindex="-1"></main>
+    <footer>Personalized outreach can still be filtered as spam. Published contact details and a relevant message do not guarantee inbox delivery.</footer>
+  </div>
+  <dialog id="editor"><form id="recipient-form"><div class="section-heading"><h2>Edit recipient</h2><button type="button" id="close-editor" class="icon-button" aria-label="Close">×</button></div><input name="id" type="hidden"><label>Contact name<input name="name" required></label><label>Company<input name="company" required></label><label>Email<input name="email" type="email" required></label><label>Personalization note<textarea name="note" rows="5" required></textarea></label><p class="muted">Use only details supported by the source. A team greeting is appropriate when no person's name is published.</p><button class="primary" type="submit">Save recipient</button></form></dialog>
+  <input id="csv-upload" type="file" accept=".csv,text/csv" hidden>
+  <input id="resume-upload" type="file" accept=".pdf,application/pdf" hidden>
+</body>
+</html>

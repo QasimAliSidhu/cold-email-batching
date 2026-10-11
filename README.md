@@ -10,4 +10,12 @@ Run `python examples/preview_demo.py` for a fictional preview that blocks SMTP a
 
 ![Project motion demo](docs/demo.gif)
 
-The motion demo combines actual interface captures or actual Python results with an illustrated walkthrough. All inputs shown are fictional.
+The demo records actual local interactions with fictional inputs. Cursor movement, camera zooms and captions are added for readability. See CREDITS.md for the exact recording setup.
+
+## Source references
+
+See [Credits and source references](CREDITS.md) for the upstream tools, libraries and fonts used, and details of the workflow recording.
+
+A separate [fictional review-interface example](examples/review_ui/README.md) supports recipient selection, note editing and generated drafts. It cannot send email or access the private campaign.
+
+[Download the full-motion recording](docs/demo.mp4).
